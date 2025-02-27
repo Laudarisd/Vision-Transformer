@@ -24,6 +24,8 @@ class VisionTransformer(nn.Module):
 # ==========================
 # ⚡ Step 2: Preprocessing the Input Image
 # ==========================
+
+# Define transformer
 transform = transforms.Compose([
     transforms.Resize((224, 224)),  # Resize image for ViT input
     transforms.ToTensor(),          # Convert to PyTorch tensor
